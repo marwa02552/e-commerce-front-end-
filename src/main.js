@@ -2,4 +2,17 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+import './assets/tailwind.css'
+// Register the icons with addIcons
+const app = createApp(App)
+
+// Register the OhVueIcon component globally
+
+// Use the router
+app.use(router)
+
+// Mount the app
+app.mount('#app')
+
+
+
